@@ -17,7 +17,7 @@ console.log("Deepar version: " + deepar.version);
   // All the effects are in the public/effects folder.
   // Here we define the order of effect files.
   const effectList = [
-    "effects/Formal.deepar",
+    "effects/Casual.deepar",
     "effects/Sneaker.deepar",
     "effects/SportsShoe.deepar",
     "effects/Formal.deepar",
@@ -28,7 +28,8 @@ console.log("Deepar version: " + deepar.version);
   // Initialize DeepAR with an effect file.
   try {
     deepAR = await deepar.initialize({
-      licenseKey: process.env.LICENSE_KEY,
+      // licenseKey: process.env.LICENSE_KEY,
+      licenseKey: "37b25f8ae253dfb5ddfd1a46c1cc8302cd5723750ae9a8e6acdb134046e6627eefb5e3e7d164b9b9",
       previewElement,
       effect: effectList[0],
       // Removing the rootPath option will make DeepAR load the resources from the JSdelivr CDN,
@@ -37,7 +38,7 @@ console.log("Deepar version: " + deepar.version);
       rootPath: "./deepar-resources",
       additionalOptions: {
         cameraConfig: {
-          // facingMode: 'environment'  // uncomment this line to use the rear camera
+          facingMode: 'environment'  // uncomment this line to use the rear camera
         },
       },
     });
