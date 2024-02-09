@@ -1,7 +1,7 @@
 {
-  "name": "quickstart-web-js-npm",
+  "name": "d-similar",
   "version": "1.0.0",
-  "description": "Quickstart project for DeepAR Web.",
+  "description": "Virtual TryOn.",
   "main": "index.js",
   "scripts": {
     "build": "rm -rf dist && webpack --config webpack.config.js --mode production && cp -r public/* dist && cp -r node_modules/deepar dist/deepar-resources",
@@ -10,6 +10,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "dotenv": "^16.4.1",
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.11.0"
