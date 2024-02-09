@@ -47,4 +47,9 @@ module.exports = {
     compress: true,
     port: 9000,
   },
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env.LICENSE_KEY': JSON.stringify(process.env.LICENSE_KEY),
+    })
+],
 };
