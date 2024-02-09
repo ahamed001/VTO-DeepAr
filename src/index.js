@@ -17,8 +17,8 @@ console.log("Deepar version: " + deepar.version);
   // All the effects are in the public/effects folder.
   // Here we define the order of effect files.
   const effectList = [
-    "effects/ray-ban-wayfarer.deepar",
-    "effects/viking_helmet.deepar",
+    "effects/Formal.deepar",
+    "effects/Sneaker.deepar",
     "effects/MakeupLook.deepar",
     "effects/Split_View_Look.deepar",
     "effects/flower_face.deepar",
