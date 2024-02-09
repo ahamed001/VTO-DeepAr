@@ -19,19 +19,8 @@ console.log("Deepar version: " + deepar.version);
   const effectList = [
     "effects/Formal.deepar",
     "effects/Sneaker.deepar",
-    "effects/MakeupLook.deepar",
-    "effects/Split_View_Look.deepar",
-    "effects/flower_face.deepar",
-    "effects/Stallone.deepar",
-    "effects/galaxy_background_web.deepar",
-    "effects/Humanoid.deepar",
-    "effects/Neon_Devil_Horns.deepar",
-    "effects/Ping_Pong.deepar",
-    "effects/Pixel_Hearts.deepar",
-    "effects/Snail.deepar",
-    "effects/Hope.deepar",
-    "effects/Vendetta_Mask.deepar",
-    "effects/Fire_Effect.deepar",
+    "effects/SportsShoe.deepar",
+    "effects/Formal.deepar",
   ];
 
   let deepAR = null;
