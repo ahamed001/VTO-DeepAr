@@ -17,7 +17,7 @@ body {
 #loading-screen,
 #permission-denied-screen,
 #permission-denied-background {
-  background-image: linear-gradient(to bottom right, rgb(63, 62, 62), rgb(245, 245, 245));
+  background-color: #eaeaea;
   background-repeat: no-repeat, repeat;
   display: flex;
   align-items: center;
@@ -72,7 +72,7 @@ body {
 .carousel-center {
   width: 84px;
   height: 84px;
-  border: 8px solid #fff;
+  border: 8px solid #662d91;
   border-radius: 50%;
   z-index: 100;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
@@ -176,7 +176,7 @@ body {
 
 #loading-progress-bar {
   width: 0%;
-  background: rgb(0 98 209 / 1);
+  background:#662d91;
   height: 100%;
   transition: width 5s ease-out;
 }
@@ -197,11 +197,11 @@ body {
 }
 
 .permission-denied-text {
-  width: 400px;
-  max-width: 95%;
-  font-size: 16px;
+  width: 90%;
+  font-size: 56px;
+  font-weight: bolder;
   line-height: 1.2;
-  color: #fff;
+  color: #662d91;
 }
 
 .permission-denied-button {
@@ -221,5 +221,48 @@ body {
 
   &:hover {
     background-color: #eaeaea;
+  }
+}
+
+@media (min-width:275px) and (max-width:450px) {
+  .carousel {
+    position: absolute;
+    bottom: 40px;
+    overflow: hidden;
+    cursor: grab;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 100%;
+}
+
+  .carousel-center {
+    width: 50px;
+    height: 50px;
+    border: 6px solid #662d91;
+  }
+
+  .carousel-slider .slide {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .carousel-slider .slide.active {
+    margin-left: 24px;
+    margin-right: 24px;
+    width: 40px;
+    height: 40px;
+  }
+  .permission-denied-text {
+    width: 90%;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #662d91;
   }
 }
