@@ -12,8 +12,8 @@ import Carousel from "./carousel.js";
   loadingProgressBar.style.width = "100%";
 
   const effectList = [
-    "effects/Casual.deepar",
     "effects/Sneaker.deepar",
+    "effects/Casual.deepar",
     "effects/Sports.deepar",
     "effects/Formal.deepar",
   ];
