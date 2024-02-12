@@ -14,7 +14,7 @@ import Carousel from "./carousel.js";
   const effectList = [
     "effects/Casual.deepar",
     "effects/Sneaker.deepar",
-    "effects/SportsShoe.deepar",
+    "effects/Sports.deepar",
     "effects/Formal.deepar",
   ];
 

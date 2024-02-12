@@ -24,6 +24,12 @@ body {
   justify-content: center;
 }
 
+.logo{
+  top: 10px;
+  width: 120px;
+  position: absolute;
+}
+
 .fixed-fullscreen {
   position: fixed;
   top: 0;
@@ -227,7 +233,7 @@ body {
 @media (min-width:275px) and (max-width:450px) {
   .carousel {
     position: absolute;
-    bottom: 40px;
+    bottom: 50px;
     overflow: hidden;
     cursor: grab;
     display: flex;
@@ -238,14 +244,14 @@ body {
 }
 
   .carousel-center {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     border: 6px solid #662d91;
   }
 
   .carousel-slider .slide {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     display: flex;
     border-radius: 50%;
     margin-left: 10px;
@@ -255,8 +261,8 @@ body {
   .carousel-slider .slide.active {
     margin-left: 24px;
     margin-right: 24px;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
   }
   .permission-denied-text {
     width: 90%;
@@ -264,5 +270,9 @@ body {
     font-weight: bold;
     line-height: 1.5;
     color: #662d91;
+  }
+  .logo{
+    top: 10px;
+    width: 50px;
   }
 }
