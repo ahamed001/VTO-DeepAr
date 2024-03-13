@@ -1,11 +1,8 @@
 import * as deepar from "deepar";
 import Carousel from "./carousel.js";
 
-// Log the version. Just in case.
-console.log("Deepar version: " + deepar.version);
+// console.log("Deepar version: " + deepar.version);
 
-// Top-level await is not supported.
-// So we wrap the whole code in an async function that is called immediatly.
 (async function () {
   // Get the element you want to place DeepAR into. DeepAR will inherit its width and height from this and fill it.
   const previewElement = document.getElementById("ar-screen");
@@ -14,12 +11,10 @@ console.log("Deepar version: " + deepar.version);
   const loadingProgressBar = document.getElementById("loading-progress-bar");
   loadingProgressBar.style.width = "100%";
 
-  // All the effects are in the public/effects folder.
-  // Here we define the order of effect files.
   const effectList = [
-    "effects/Casual.deepar",
     "effects/Sneaker.deepar",
-    "effects/SportsShoe.deepar",
+    "effects/Casual.deepar",
+    "effects/Sports.deepar",
     "effects/Formal.deepar",
   ];
 
@@ -31,13 +26,10 @@ console.log("Deepar version: " + deepar.version);
       licenseKey: process.env.LICENSE_KEY,
       previewElement,
       effect: effectList[0],
-      // Removing the rootPath option will make DeepAR load the resources from the JSdelivr CDN,
-      // which is fine for development but is not recommended for production since it's not optimized for performance and can be unstable.
-      // More info here: https://docs.deepar.ai/deepar-sdk/platforms/web/tutorials/download-optimizations/#custom-deployment-of-deepar-web-resources
       rootPath: "./deepar-resources",
       additionalOptions: {
         cameraConfig: {
-          facingMode: 'environment'  // uncomment this line to use the rear camera
+          facingMode: 'environment' 
         },
       },
     });
